@@ -17,7 +17,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['@/assets/css/common.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -45,14 +45,14 @@ export default {
   // Nuxt-mail module configuration: https://www.npmjs.com/package/nuxt-mail
   mail: {
     message: {
-      to: process.env.MAILTO,
+      to: 'boukidev@gmail.com',
     },
     smtp: {
-      host: process.env.HOST,
-      port: process.env.PORT,
+      host: 'smtp.sendgrid.net',
+      port: 587,
       auth: {
-        user: process.env.USER,
-        pass: process.env.PASS,
+        user: 'apikey',
+        pass: process.env.LASS,
       },
     },
   },
