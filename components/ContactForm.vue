@@ -164,6 +164,7 @@ export default {
             Email address : ${this.emailAddress}<br/>
             Phone number : ${this.phone}<br/>
             Compagny : ${this.company}<br/>
+            Subject: ${this.subject}<br/>
             Message : ${this.message}<br/> `,
           })
           alert(`Your message sent !`)
