@@ -157,7 +157,7 @@ export default {
         try {
           // send email method
           this.$mail.send({
-            from: this.emailAddress,
+            from: process.env.MAILFROM,
             subject: this.subject,
             html: `First name : ${this.firstName}<br/>
             Last name : ${this.lastName}<br/>
@@ -166,7 +166,7 @@ export default {
             Compagny : ${this.company}<br/>
             Message : ${this.message}<br/> `,
           })
-          alert(`Your message sent to ${process.env.MAILTO} !`)
+          alert(`Your message sent !`)
           for (let i = 0; i < inputField.length; i++) {
             inputField[i].value = ''
           }
