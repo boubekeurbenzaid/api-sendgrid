@@ -45,7 +45,7 @@ export default {
   // Nuxt-mail module configuration: https://www.npmjs.com/package/nuxt-mail
   mail: {
     message: {
-      to: 'boukidev@gmail.com',
+      to: process.env.MAILTO,
     },
     smtp: {
       host: 'smtp.sendgrid.net',
